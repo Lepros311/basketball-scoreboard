@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* @import url('http://fonts.cdnfonts.com/css/cursed-timer-ulil'); */
+
+/* @font-face {
+    src: url("CursedTimerUliL.ttf");
+    font-family: "timer";
+} */
+
+@font-face {font-family:"Cursed Timer ULiL";src:url("CursedTimerULiL.eot?") format("eot"),url("CursedTimerULiL.woff") format("woff"),url("CursedTimerULiL.ttf") format("truetype"),url("CursedTimerULiL.svg#CursedTimerULiL") format("svg");font-weight:normal;font-style:normal;}
+
+body {
+    background-color: #1b244a;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.homeGuestTitle {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #eeeeee;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+.score {
+    width: 155px;
+    height: 120px;
+    background-color: #080001;
+    color: #f94f6d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+    margin-bottom: 25px;
+    /* font-family: timer; */
+    font-family: 'Cursed Timer ULiL', sans-serif;
+                                                
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.inc-btn {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #9aabd8;
+    border-radius: 5px;
+    background-color: #1b244a;
+    color: #9aabd8;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+
+.option-btn,
+.option-btn:focus {
+    display: block;
+    margin: auto;
+    background-color: gray;
+    color: yellow;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.border-add {
+    border: 5px solid green;
+}
+
+#timer {
+    width: 200px;
+    height: 100px;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    color: red;
+    text-align: center;
+    line-height: 2;
+    font-size: 50px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.time-btn,
+.time-btn:focus {
+    background-color: gray;
+    color: yellow;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
