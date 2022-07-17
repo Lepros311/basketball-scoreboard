@@ -12,6 +12,7 @@ const timeoutBtn = document.getElementById("timeout-btn");
 const resumeBtn = document.getElementById("resume-btn");
 let homeCount = 0;
 let guestCount = 0;
+let timeoutFlag = false;
 
 homeBtn1.addEventListener("click", incrementHome1);
 homeBtn2.addEventListener("click", incrementHome2);
@@ -128,9 +129,13 @@ function checkSecond(sec) {
 }
 
 function timeout() {
+    timeoutFlag = true;
     clearTimeout(t);
 }
 
 function resume() {
-    startTimer();
+    if(timeoutFlag) {
+        startTimer();
+        timeoutFlag = false;
+    }
 }
